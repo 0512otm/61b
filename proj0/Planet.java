@@ -67,8 +67,8 @@ public class Planet{
 		double ay=fY/this.mass;
 		xxVel=this.xxVel+dt*ax;
 		yyVel=this.yyVel+dt*ay;
-		xxPos=this.xxPos+dt*Vnewx;
-		yyPos=this.yyPos+dt*Vnewy;
+		xxPos=this.xxPos+dt*xxVel;
+		yyPos=this.yyPos+dt*yyVel;
 		
 		
 	}
